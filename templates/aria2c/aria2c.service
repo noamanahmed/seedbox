@@ -1,0 +1,10 @@
+[Unit]
+Description=Aria2C
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/bin/aria2c --enable-rpc --rpc-listen-all
+
+[Install]
+WantedBy=multi-user.target
